@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .alert {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        label {
+            width: 200px;
+            font-weight: bold;
+        }
+
+        input,select {
+            width: 100%;
+            padding: 8px;
+        }
+        .catcha {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .catcha .code {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .valider {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+        .annuler {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="container">
+        <h2>Création de votre compte d'accés</h2>
+        <div class="alert">
+            <p>. Tous les champs sont obligatoires</p>
+            <p>. Le mot de passe doit contenir 8 caractéres minimum avec un mélange de chiffres et de lettres.</p>
+    </div>
+
+    <form>
+        
+    <div class="row">
+        <label>Type d'identifiant :</label>
+        <select>
+            <option>Sélectionnez le type d'identifiant</option>
+            <option>Passeport</option>
+        </select>
+    </div>
+    <div class="row">
+        <label>Votre identifiant :</label>
+        <input type="text" placeholder="Votre identifiant">
+    </div>
+
+    <div class="row">
+        <label>Nom :</label>
+        <input type="text" placeholder="Nom de famille">
+</div>
+
+<div class="row">
+    <label>Prénoms :</label>
+    <input type="text" placeholder="Prénoms">
+</div>
+<div class="row">
+    <label>Mot de passe :</label>
+    <input type="passeword" placeholder="Créer un mot de passe">
+</div>
+<div class="row">
+    <label>Confirmer votre mot de passe :</label>
+    <input type="passeword" placeholder="Confirmer votre mot de passe">
+</div>
+
+<div class="row">
+    <label>E-mail personnel :</label>
+    <input type="email" placeholder="E-mail personnel">
+</div>
+<div class="row">
+    <label>Captcha :</label>
+    <input type="text" placeholder="Saisissez les caractéres ci-dessous">
+</div>
+
+<div class="buttons">
+    <button type="button">Régénérer</button>
+    <span class="code">XQGW</span>
+</div>
+<div class="buttons">
+    <button class="valoider" type="submit">Valider</button>
+    <button class="annuler" type="reset">Annuler</button>
+</div>
+</form>
+</div>
+</body>
+
+</html>
+
